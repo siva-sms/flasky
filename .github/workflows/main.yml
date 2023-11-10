@@ -1,0 +1,8 @@
+name: my first action
+on: [push]
+
+jobs:
+  my-first-action:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Github actions works"
