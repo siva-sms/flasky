@@ -23,7 +23,7 @@ class UserModelTestCase(unittest.TestCase):
         self.assertTrue(u.password_hash is not None)
 
     def test_no_password_getter(self):
-        u = User(password='cat')
+        u = User(password='wolf')
         with self.assertRaises(AttributeError):
             u.password
 
